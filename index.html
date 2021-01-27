@@ -10,7 +10,7 @@ title: Posts
         {{ post.title }}
       </a>
     </h1>
-    <span class="small">posted on {{ post.date | date: "%F" }}</span>
+    <p class="small">posted on {{ post.date | date: "%F" }}</p>
     {{ post.excerpt }}
   </div>
 {% endfor %}
