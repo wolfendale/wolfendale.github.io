@@ -1,0 +1,53 @@
+---
+---
+
+@font-face {
+  font-family: "iA Writer Mono";
+  src: url("/public/fonts/iAWriterMono/WebFonts/iAWriterMonoS-Regular.woff2");
+}
+
+@font-face {
+  font-family: "iA Writer Quattro";
+  src: url("/public/fonts/iAWriterQuattro/WebFonts/iAWriterQuattroS-Regular.woff2");
+}
+
+$font-family-sans-serif: "iA Writer Quattro";
+$font-family-monospace: "iA Writer Mono";
+$font-size-base: 1.3rem;
+$paragraph-margin-bottom: 2rem;
+$headings-margin-bottom: 2rem;
+
+$body-bg: rgb(30, 30, 30);
+$body-color: rgb(225, 225, 225);
+$link-color: $body-color;
+$link-decoration: underline;
+
+@import "bootstrap/bootstrap";
+
+blockquote {
+  border-left: $spacer solid rgb(50, 50, 50);
+  padding-left: $spacer;
+}
+
+pre {
+  padding: $spacer;
+}
+
+@import "./highlight.scss";
+
+.nav-toggle {
+  @extend .btn, .w-100, .rounded-0, .bg-transparent, .text-white;
+  &:focus {
+    box-shadow: none;
+  }
+  &::after {
+    content: "more";
+  }
+  &[aria-expanded="true"]::after {
+    content: "less";
+  }
+}
+
+.header {
+  background-color: $gray-900;
+}

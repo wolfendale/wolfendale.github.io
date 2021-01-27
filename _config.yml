@@ -1,16 +1,8 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
 
 # Setup
 title:               michael wolfendale
-tagline:             'wolfendale.github.io'
-description:         ''
 url:                 http://wolfendale.github.io
-baseurl:             ''
-paginate:            5
 
 # About/contact
 author:
@@ -20,3 +12,17 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+plugins:
+  - "jekyll-autoprefixer"
+
+sass:
+  sass_dir: "assets/css"
+
+defaults:
+  - 
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Michael Wolfendale"
