@@ -10,7 +10,7 @@ Akka streams is a part of the Akka ecosystem which implements the concept of [re
 
 There are lots of good reasons to use akka streams. I'll go through a few of them here but this is by no means an exhaustive list:
 
-- Modelling computations are streams of data elements being transformed can be extremely intuitive, especially for people who like functional / declarative programming.
+- Modelling computations as streams of data elements being transformed can be extremely intuitive, especially for people who like functional / declarative programming.
 - Back pressure helps build systems which can respond to load in a predictable way.
 - Akka is compatible with other reactive streams implementations which allows for interoperability of graphs and stages.
 - Even small systems built on the actor model can be difficult to reason about as a whole. By creating a graph to represent the same computation this can be much easier to reason about, test and maintain.
