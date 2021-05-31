@@ -311,7 +311,7 @@ Demand is also referred to as back pressure. Think of it like this, a `Sink` wil
 
 How demand is implemented depends on the specifics of the `Source` or `Sink` in question. Let's look at how this would apply to our above examples.
 
-### Demand for `Sources
+### Demand for `Source`s
 
 Our super-fast tweet source would need to make sure it _only emits when there is demand_. To do this we need to decide how we would turn a stream of lots of tweets into a stream of fewer tweets.
 
